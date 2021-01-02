@@ -1,0 +1,2 @@
+rootProject.name='whats_app_ieee2'
+include ':app'

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="30dp"
+       app:cardCornerRadius="15dp"
+        android:layout_margin="5dp" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/person_image_calls"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:civ_border_color="#001BD8C8"
+                app:civ_border_width="2dp"
+                android:layout_alignParentLeft="true"
+                />
+            <TextView
+                android:id="@+id/tv_name_call"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="name"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30dp"
+                android:layout_toRightOf="@+id/person_image_calls"
+
+                />
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/icon_phone_image"
+                android:layout_margin ="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:civ_border_color="#00574B"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_local_phone_black_24dp"
+                app:civ_border_width="2dp" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
